@@ -1,0 +1,51 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 5px;
+}
+th {
+	text-align: left;
+}
+
+body {
+	background-color: lightblue;
+}
+
+.images {
+	max-height: 150px;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+.vid {
+	max-height: 230px;
+	max-width: 250px;
+	display: inline;
+	margin:0px;
+	padding: 0px;
+}
+#equ {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	height: auto;
+	max-width: auto;
+	overflow-y: hidden;
+	overflow-x:auto;
+}
+#equ img{
+	display: inline-block;
+	margin-right: 40px;
+	border: 1px solid #ccc;
+}
+
+#equ video{
+	display: inline-block;
+	margin-right: 30px;
+	border: 1px solid #ccc;
+}
+
