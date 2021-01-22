@@ -41,6 +41,7 @@ li a {
 }
 
 .container {
+	width: 100%;
 	padding: 20px;
 	margin-top: 30px;
 }
@@ -67,7 +68,7 @@ li a {
 	height: auto;
 	max-width: auto;
 	overflow-y: hidden;
-	overflow-x:auto;
+	overflow-x: hidden;
 }
 #equ img{
 	display: inline-block;
