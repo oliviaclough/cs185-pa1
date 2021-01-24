@@ -7,35 +7,47 @@
 	</head>
 
 	<body>
-		<nav>
-			<ul>
-				<li><a href="./index.html">HOME</a></li>
-			 	<li><a href="./text.html">TEXT</a></li>
-				<li class="active"><a href="./image.html">IMAGES</a></li>
-				<li><a href="./video.html">VIDEOS</a></li>
-				<li><a href="./table.html">TABLES</a></li>
-				<li><a href="./form.html">EMAIL</a></li>
-			</ul>
-		</nav>
+		<div class="navb">
+			<nav>
+				<ul>
+					<li><a href="./index.html">HOME</a></li>
+				 	<li><a href="./text.html">TEXT</a></li>
+					<li class="active"><a href="./image.html">IMAGES</a></li>
+					<li><a href="./video.html">VIDEOS</a></li>
+					<li><a href="./table.html">TABLES</a></li>
+					<li><a href="./form.html">EMAIL</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 		<div class="container">
 			<h1>Food Types</h1>
-			<h3>foods I do like:</h3>
 
-			<div id="equ">
-				<img src="./pizza.jpg" class="images" />
+			<div class="container" id="equ">
+				<img src="./pizza.jpg" class="images" onclick="enlargeImg(this)"/>
 				<img src="./ctm.jpg" class="images" />
 				<img src="./pasta.jpg" class="images" />
-			</div>
-
-			<h3>foods I don't like:</h3>
-
-			<div id="equ">
+				<img src="./burger.jpg" class="images" />
+				<img src="./baked.jpg" class="images" />
+				<img src="./fries.jpg" class="images" />
+				<img src="./food.jpg" class="images" />
+				<img src="./toast.jpg" class="images" />
 				<img src = "./olive.jpg" class="images" />
 				<img src="./no-mushrooms.jpg" class="images"/>
 				<img src="./mayo.jpg" class="images" />
 			</div>
 
+			<script>
+				function enlargeImg(img) {
+					img.style.transform = "scale(4)";
+					img.style.transition = "transform 0.25s ease";
+				}
+			</script>
+
 		</div>
+
+		<script src="scroll.js"></script>
 	</body>
 </html>
