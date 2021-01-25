@@ -22,16 +22,39 @@
 
 		<div class="container">
 			<h1>Sunset Videos</h1>
-			<div id="equ">
-				<video src="./sunset1.MOV" class="vid" controls></video>
-				<video src="./sunset2.MP4" class="vid" controls></video>
-				<video src="./sunset3.mov" class="vid" controls></video>
-				<video src="./sunset5.MOV" class="vid" controls></video>
-				<video src="./sunset6.MOV" class="vid" controls></video>
-				<video src="./sunset7.MOV" class="vid" controls></video>
+			<div class="grid">
+				<div class="in-grid">
+					<video onClick="showOverlay(this)" src="./sunset1.MOV" controls></video>
+				</div>
+
+				<div class="in-grid">
+					<video onClick="showOverlay(this)" src="./sunset2.MP4" controls></video>
+				</div>
+
+				<div class="in-grid">
+					<video onClick="showOverlay(this)" src="./sunset3.mov" controls></video>
+				</div>
+
+				<div class="in-grid">
+					<video onClick="showOverlay(this)" src="./sunset5.MOV" controls></video>
+				</div>
+
+				<div class="in-grid">
+					<video onClick="showOverlay(this)" src="./sunset6.MOV" controls></video>
+				</div>
+
+				<div class="in-grid">
+					<video onClick="showOverlay(this)" src="./sunset7.MOV" controls></video>
+				</div>
+
 			</div>
 		</div>
 
+		<div id="overlay" class="overlay" onClick="hideOverlay()">
+			<video id="overlay-with" class="overlay-with" controls></video>
+		</div>
+
+		<script src="overlay.js"></script>
 		<script src="scroll.js"></script>
 	</body>
 </html>

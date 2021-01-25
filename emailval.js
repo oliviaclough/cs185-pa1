@@ -1,11 +1,10 @@
 function check(){
-  if(!document.getElementById("subscribe-email").checkValidity()){
-    alert("input not valid!");
+  if(!document.getElementById("email").checkValidity()){
+  	//invalid
+    output.innerHTML = "Invalid email.";
   }
   else{
-    callMeIfValid();
+  	//valid
+    output.innerHTML = "Email validated.";
   }
-}
-function callMeIfValid(){
-  alert("valid input");
 }

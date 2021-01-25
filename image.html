@@ -25,28 +25,46 @@
 		<div class="container">
 			<h1>Food Types</h1>
 
-			<div class="container" id="equ">
-				<img src="./pizza.jpg" class="images" onclick="enlargeImg(this)"/>
-				<img src="./ctm.jpg" class="images" />
-				<img src="./pasta.jpg" class="images" />
-				<img src="./burger.jpg" class="images" />
-				<img src="./baked.jpg" class="images" />
-				<img src="./fries.jpg" class="images" />
-				<img src="./food.jpg" class="images" />
-				<img src="./toast.jpg" class="images" />
-				<img src = "./olive.jpg" class="images" />
-				<img src="./no-mushrooms.jpg" class="images"/>
-				<img src="./mayo.jpg" class="images" />
+			<div class="grid">
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./ctm.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img sonClick = "showOverlay(this)" src="./pasta.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./burger.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./baked.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./fries.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./food.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./toast.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src = "./olive.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./no-mushrooms.jpg"/>
+				</div>
+				<div class="in-grid">
+					<img onClick = "showOverlay(this)" src="./mayo.jpg"/>
+				</div>
 			</div>
 
-			<script>
-				function enlargeImg(img) {
-					img.style.transform = "scale(4)";
-					img.style.transition = "transform 0.25s ease";
-				}
-			</script>
-
 		</div>
+
+		<div id="overlay" class="overlay" onClick="hideOverlay()">
+			<img id="overlay-with" class="overlay-with">
+		</div>
+
+		<script src="overlay.js"></script>
 
 		<script src="scroll.js"></script>
 	</body>
