@@ -24,35 +24,45 @@
 			<h1>Sunset Videos</h1>
 			<div class="grid">
 				<div class="in-grid">
-					<video onClick="showOverlay(this)" src="./sunset1.MOV" controls></video>
+					<video onClick="showOverlay(this)" src="./sunset1.MOV" id = 'v1' controls muted></video>
 				</div>
 
 				<div class="in-grid">
-					<video onClick="showOverlay(this)" src="./sunset2.MP4" controls></video>
+					<video onClick="showOverlay(this)" src="./sunset2.MP4" id = 'v2' controls muted></video>
 				</div>
 
 				<div class="in-grid">
-					<video onClick="showOverlay(this)" src="./sunset3.mov" controls></video>
+					<video onClick="showOverlay(this)" src="./sunset3.mov" id = 'v3' controls muted></video>
 				</div>
 
 				<div class="in-grid">
-					<video onClick="showOverlay(this)" src="./sunset5.MOV" controls></video>
+					<video onClick="showOverlay(this)" src="./sunset5.MOV" id = 'v4' controls muted></video>
 				</div>
 
 				<div class="in-grid">
-					<video onClick="showOverlay(this)" src="./sunset6.MOV" controls></video>
+					<video onClick="showOverlay(this)" src="./sunset6.MOV" id = 'v5' controls muted></video>
 				</div>
 
 				<div class="in-grid">
-					<video onClick="showOverlay(this)" src="./sunset7.MOV" controls></video>
+					<video onClick="showOverlay(this)" src="./sunset7.MOV" id = 'v6' controls muted></video>
 				</div>
 
 			</div>
 		</div>
 
-		<div id="overlay" class="overlay" onClick="hideOverlay()">
+		<div id="overlay" class="overlay" >
 			<video id="overlay-with" class="overlay-with" controls></video>
 		</div>
+
+ 		<script>
+			var specifiedElement = document.getElementById("overlay-with");
+			document.addEventListener('click', function(event) {
+				var isClickInside = specifiedElement.contains(event.target);
+				if (!isClickInside){
+					document.getElementById("overlay").style.display = "none";
+				}
+			});
+		</script>
 
 		<script src="overlay.js"></script>
 		<script src="scroll.js"></script>

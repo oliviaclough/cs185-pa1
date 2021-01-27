@@ -14,8 +14,13 @@ th {
 	text-align: left;
 }
 
+p {
+  line-height: 1.6;
+}
+
 body {
 	background-color: lightblue;
+
 }
 
 ul {
@@ -54,7 +59,7 @@ img, video {
     background-color: rgb(0, 0, 0, 0.5);
     display: none;
     position: fixed;
-    width: 100vw;	/* 100% of viewport */
+    width: 100vw;	 /* 100% of viewport */
     height: 100vh;	/* 100% of viewport */
     left: 0;
     bottom: 0;
@@ -70,6 +75,7 @@ img, video {
     position: absolute;
     transform: translate(-50%,-50%);
     width: auto;
+    z-index: 99;
 }
 
 .active {
@@ -79,7 +85,7 @@ img, video {
 .container {
 	margin-right:auto;
 	margin-left:auto;
-	width: 100%;
+	width: 85%;
 	padding: 20px;
 	margin-top: 40px;
 }
