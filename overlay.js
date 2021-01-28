@@ -3,6 +3,7 @@
 function showOverlay(content){
 	document.getElementById("overlay").style.display = "block";
 	document.getElementById("overlay-with").src = content.src;
+	event.preventDefault();
 }
 
 function hideOverlay(){
