@@ -50,19 +50,9 @@
 			</div>
 		</div>
 
-		<div id="overlay" class="overlay" >
+		<div id="overlay" class="overlay" onClick="hideOverlay()">
 			<video id="overlay-with" class="overlay-with" controls></video>
 		</div>
-
- 		<script>
-			var specifiedElement = document.getElementById("overlay-with");
-			document.addEventListener('click', function(event) {
-				var isClickInside = specifiedElement.contains(event.target);
-				if (!isClickInside){
-					document.getElementById("overlay").style.display = "none";
-				}
-			});
-		</script>
 
 		<script src="overlay.js"></script>
 		<script src="scroll.js"></script>
